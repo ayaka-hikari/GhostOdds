@@ -1,0 +1,216 @@
+.ghost-wrapper {
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  max-width: 1200px;
+}
+
+.ghost-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.6);
+}
+
+.hero-badge {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  color: #38bdf8;
+  margin: 0 0 1rem 0;
+}
+
+.ghost-hero h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.hero-copy {
+  margin-top: 1rem;
+  color: #cbd5f5;
+  max-width: 560px;
+  line-height: 1.5;
+}
+
+.hero-connect {
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.hero-status {
+  font-size: 0.9rem;
+  color: #a5b4fc;
+}
+
+.error-text {
+  color: #f87171;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.panel-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 18px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.panel-card header h3 {
+  margin: 0;
+}
+
+.panel-card header p {
+  color: #9ca3af;
+  margin: 0.25rem 0 0;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row label {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.form-row input {
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.6);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+.helper-text {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.primary-btn,
+.secondary-btn,
+.guess-btn {
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.25rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: #fff;
+}
+
+.secondary-btn {
+  background: rgba(37, 99, 235, 0.2);
+  color: #bfdbfe;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.guess-btn {
+  background: rgba(96, 165, 250, 0.2);
+  color: #e0e7ff;
+  flex: 1;
+}
+
+.primary-btn:disabled,
+.secondary-btn:disabled,
+.guess-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.info-line {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.status-banner {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.status-banner .label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.guess-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 12px;
+  padding: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.stat-card .label {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.stat-card strong {
+  font-size: 1.35rem;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.status-toast {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(14, 165, 233, 0.4);
+  color: #bae6fd;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .ghost-hero {
+    flex-direction: column;
+  }
+
+  .hero-connect {
+    align-items: flex-start;
+  }
+
+  .guess-buttons {
+    flex-direction: column;
+  }
+}
