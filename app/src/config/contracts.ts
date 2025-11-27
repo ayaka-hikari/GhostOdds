@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000'; // replace with deployed GhostOdds address
+export const CONTRACT_ADDRESS = '0x8082fD0896Abe67035ec31d1fe2D05E065c3BEfd'; // replace with deployed GhostOdds address
 
 export const CONTRACT_ABI = [
   {
