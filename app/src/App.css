@@ -1,0 +1,6 @@
+#root {
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at top, #10172a, #05050d 65%);
+  color: #f8fafc;
+}
