@@ -15,7 +15,7 @@ type DecryptedSnapshot = {
   outcome: number | null;
 };
 
-const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
+// const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 export function GhostOddsApp() {
   const { address, isConnected } = useAccount();
@@ -122,9 +122,9 @@ export function GhostOddsApp() {
   };
 
   const requireContractReady = () => {
-    if (CONTRACT_ADDRESS === ZERO_ADDRESS) {
-      throw new Error('Please configure the deployed contract address first.');
-    }
+    // if (CONTRACT_ADDRESS === ZERO_ADDRESS) {
+    //   throw new Error('Please configure the deployed contract address first.');
+    // }
   };
 
   const getContract = async () => {
@@ -367,7 +367,7 @@ export function GhostOddsApp() {
           </div>
           <button
             onClick={handleStartRound}
-            disabled={!joined || actions.round || CONTRACT_ADDRESS === ZERO_ADDRESS}
+            disabled={!joined || actions.round}
             className="secondary-btn"
           >
             {actions.round ? 'Locking dice...' : 'Start encrypted round'}
